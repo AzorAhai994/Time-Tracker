@@ -1,0 +1,257 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Montserrat";
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #000000;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgb(0 77 133) / 4;
+}
+
+.main {
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+table {
+  border-spacing: 0;
+  border-radius: 7px;
+  overflow: hidden;
+  border-collapse: collapse;
+  display: block;
+  height: 66vh;
+  overflow-y: scroll;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #f4f6f8;
+  background-color: #fff;
+}
+
+table td:not(:first-child) {
+  text-align: center;
+}
+
+table th {
+  background-color: #004d85;
+  padding: 15px;
+  padding: 15px 28px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* table > thead > tr > th:nth-child(5) {
+    padding: 15px 24px 15px 55px;
+} */
+
+table > thead > tr > th:nth-child(6) {
+  padding: 15px 20px;
+}
+
+table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.name > p {
+  margin: 0;
+}
+
+.person {
+  display: inline-flex;
+  align-items: center;
+}
+
+.person > .profile-image {
+  margin-right: 17px;
+  display: block;
+  position: relative;
+}
+
+.person > .profile-image img {
+  display: block;
+}
+
+.status {
+  display: block;
+  width: 30%;
+  height: 30%;
+  background: #52bdff;
+  position: absolute;
+  right: -4px;
+  bottom: 0;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.branding {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+table p {
+  margin: 0;
+}
+
+.total-time {
+  display: inline-flex;
+}
+
+.total-time p {
+  margin-right: 5px;
+}
+
+.clock {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-size: 42px;
+}
+
+.clock {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.clock p {
+  display: inline;
+  color: white;
+}
+
+#hours {
+  font-weight: 600;
+}
+
+#minutes {
+  font-weight: 300;
+}
+
+div#date {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+#switcher svg circle#circle {
+  opacity: 0;
+  transition: all ease 0.35s;
+}
+
+#switcher.pause svg circle#circle {
+  opacity: 1;
+  transition: all ease 0.35s;
+}
+
+#switcher {
+  cursor: pointer;
+  transition: all ease 0.35s;
+}
+
+#switcher svg {
+  display: inline-block;
+  height: 46px;
+  width: 46px;
+}
+
+#switcher.play svg {
+  transition: all ease 0.35s;
+  transform: scale(1);
+}
+
+#switcher.pause svg {
+  transition: all ease 0.35s;
+  transform: scale(1.1);
+}
+
+#circle {
+  fill: none;
+  stroke: #52bdff;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 0.35s;
+  /* transform: rotate(90deg); */
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+#switcher.pause #cup {
+  fill: #ed4d3b;
+  transition: all ease 0.35s;
+}
+
+#switcher.play #cup {
+  fill: #3c454f;
+  transition: all ease 0.35s;
+}
+
+circle.circle-animation {
+  opacity: 0.5;
+}
+
+#switcher.play svg circle#circle {
+  opacity: 1;
+}
+
+#switcher .circle-animation {
+  opacity: 0;
+}
+
+#switcher.play .circle-animation {
+  opacity: 0.5;
+}
+
+#switcher.pause .circle-animation {
+  opacity: 0.5;
+}
+
+.odjava-btn {
+  background-color: #004d85;
+  padding: 10px 35px;
+  border-radius: 500px;
+  display: block;
+}
+
+.odjava-btn p {
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+}
