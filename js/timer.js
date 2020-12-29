@@ -63,10 +63,10 @@ function timer(seconds) {
     if (timeLeft < 0) {
       clearInterval(intervalTimer);
       isStarted = false;
-      setterBtns.forEach(function (btn) {
+      /* setterBtns.forEach(function (btn) {
         btn.disabled = false;
         btn.style.opacity = 1;
-      });
+      }); */
       displayTimeLeft(wholeTime);
       pauseBtn.classList.remove("pause");
       pauseBtn.classList.add("play");
@@ -83,10 +83,10 @@ function pauseTimer(event) {
     this.classList.remove("play");
     this.classList.add("pause");
 
-    setterBtns.forEach(function (btn) {
+    /* setterBtns.forEach(function (btn) {
       btn.disabled = true;
       btn.style.opacity = 0.5;
-    });
+    }); */
   } else if (isPaused) {
     this.classList.remove("play");
     this.classList.add("pause");
